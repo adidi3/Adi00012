@@ -22,29 +22,23 @@ public class MainActivity extends AppCompatActivity {
         rr=(LinearLayout) findViewById(R.id.roro);
 
 
-
-
-
-
-
     }
 
-    public void switcher(View view) {
 
-        if (rl.isChecked()) {
-            rr.setBackgroundColor(Color.RED);
+    public void B(View view) {
+        if (rl.isChecked() && ll.isChecked()) {
+            rr.setBackgroundColor(Color.BLUE);
         }
-        else rr.setBackgroundColor(Color.BLUE);
-
-
-
-
-
+         else {
+            if (rl.isChecked()) {
+                rr.setBackgroundColor(Color.RED);}
+                else {
+                if (ll.isChecked()) {
+                    rr.setBackgroundColor(Color.YELLOW);
+                } else {
+                    rr.setBackgroundColor(Color.GREEN);
+                }
+            }
+        }
     }
-
-    public void toggle(View view) {
-        if (ll.isChecked()) {
-            rr.setBackgroundColor(Color.YELLOW);
-        } else rr.setBackgroundColor(Color.GREEN);
-    }
-}
+        }
