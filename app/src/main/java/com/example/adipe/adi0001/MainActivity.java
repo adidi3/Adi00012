@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void B(View view) {
         if (rl.isChecked() && ll.isChecked()) {
             rr.setBackgroundColor(Color.BLUE);
